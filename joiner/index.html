@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Joining...</title>
+</head>
+<body>
+  <p>Opening Roblox...</p>
+  <script>
+    const p = new URLSearchParams(window.location.search);
+    const placeId = p.get("placeId");
+    const gameInstanceId = p.get("gameInstanceId");
+    if (placeId && gameInstanceId) {
+      window.location = "roblox://experiences/start?placeId=" + placeId + "&gameInstanceId=" + gameInstanceId;
+    }
+  </script>
+</body>
+</html>
